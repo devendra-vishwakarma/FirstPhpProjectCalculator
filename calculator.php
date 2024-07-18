@@ -64,6 +64,7 @@
             <span onclick="appendToInput('%')">%</span>
             <span onclick="appendToInput('-')">-</span>
             <span onclick="appendToInput('+')">+</span>
+            <span onclick="appendToInput('*')">*</span>
             <span onclick="appendToInput('7')">7</span>
             <span onclick="appendToInput('8')">8</span>
             <span onclick="appendToInput('9')">9</span>
