@@ -2,54 +2,58 @@
 <html>
 
 <meta>
-    <meta ref></meta>
-    <title>Calculate</title>
-    <style>
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px; 
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+<meta ref>
+</meta>
+<title>Calculate</title>
+<style>
+    .container {
+        background: #7AA5D2;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .calculator {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
+    .calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
 
-        .calculator input[type="text"] {
-            grid-column: span 4;
-            padding: 10px;
-            font-size: 18px;
-        }
+    .calculator input[type="text"] {
+        grid-column: span 4;
+        padding: 10px;
+        font-size: 18px;
+    }
 
-        .calculator span,
-        .calculator .equal {
-            padding: 20px;
-            text-align: center;
-            background-color: #f0f0f0;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .calculator span:hover{
-            background-color: #F0E68C;
-        }
+    .calculator span,
+    .calculator .equal {
+        padding: 20px;
+        text-align: center;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-        .calculator .num_clear {
-            background-color: #ffcccc;
-        }
+    .calculator span:hover {
+        background-color: #F0E68C;
+    }
 
-        .calculator .equal {
-            background-color: #ccffcc;
-        }
-        span{
-            border-radius: 50%;
-        }
-    </style>
+    .calculator .num_clear {
+        background-color: #ffcccc;
+    }
+
+    .calculator .equal {
+        background-color: #ccffcc;
+    }
+
+    span {
+        border-radius: 50%;
+    }
+</style>
 
 
 </head>
@@ -64,21 +68,21 @@
             <span onclick="appendToInput('%')">%</span>
             <span onclick="appendToInput('-')">-</span>
             <span onclick="appendToInput('+')">+</span>
-            <span onclick="appendToInput('*')">*</span>
             <span onclick="appendToInput('7')">7</span>
             <span onclick="appendToInput('8')">8</span>
             <span onclick="appendToInput('9')">9</span>
+            <span onclick="appendToInput('*')">*</span>
             <span onclick="appendToInput('4')">4</span>
             <span onclick="appendToInput('5')">5</span>
             <span onclick="appendToInput('6')">6</span>
-            <span onclick="appendToInput('1')">1</span>
-            <span onclick="appendToInput('2')">2</span>
             <span onclick="appendToInput('3')">3</span>
+            <span onclick="appendToInput('2')">2</span>
+            <span onclick="appendToInput('1')">1</span>
             <span onclick="appendToInput('0')">0</span>
-            <span onclick="appendToInput('00')">00</span>
             <span onclick="appendToInput('.')">.</span>
-            <span class="equal" onclick="calculateResult()">=</span>
+            <span onclick="appendToInput('00')">00</span>
             <span class="num_clear" onclick="clearInput()">clear</span>
+            <span class="equal" onclick="calculateResult()">=</span>
         </form>
     </div>
 
